@@ -20,10 +20,9 @@ function sonucuGoster(){
     kazananTxt.innerHTML=kazanan
     container.style.opacity="0.1"
     alert.style.display="flex"
-
+    listArray[rastgeleSayi].remove()
 }
 function closeAlert(){
     container.style.opacity = "1";
     alert.style.display = "none";
-    window.location.reload();
 }
