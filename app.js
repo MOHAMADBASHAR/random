@@ -6,10 +6,15 @@ const alert = document.querySelector(".alert")
 addToListBtn.addEventListener("click", AddToList)
 function AddToList(){
     const katilimciInput = document.querySelector(".katilimci");
-    const li = document.createElement("li");
-    li.innerHTML= katilimciInput.value;
-    list.appendChild(li);
-    katilimciInput.value ="";
+    if(katilimciInput.value==""){
+        console.log(katilimciInput)
+    }
+    else{
+        const li = document.createElement("li");
+        li.innerHTML= katilimciInput.value;
+        list.appendChild(li);
+        katilimciInput.value ="";
+    }
 }
 resultBtn.addEventListener("click", sonucuGoster)
 function sonucuGoster(){
