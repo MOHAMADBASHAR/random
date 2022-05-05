@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Çekiliş</title>
+</head>
+<body>
+    <div class="container">
+        <div class="containerKatilimci">
+            <form>
+                <h2>Katılımcı ekle</h2>
+                <input type="text" class="katilimci">
+                <input type="button" value="Katılımcı ekle" class="AddToList">
+            </form>
+            <div class="listContainer">
+                <h2>
+                    Katılımcı listesi
+                </h2>
+                <ul class="list">
+                </ul>
+            </div>
+            <button class="result">Kazananı belirle</button>
+        </div>
+        <div class="alert passive">
+            <h2>
+                Kazanan
+            </h2>
+            <p class="kazanan">
+            </p>
+            <button class="alertBtn" onclick="closeAlert()">kapat</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/9dfff1a9f8.js" crossorigin="anonymous"></script>
+</body>
+</html>

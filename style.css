@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Noto+Sans:wght@700&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif,'Noto Sans', sans-serif,'Varela Round', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 570px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.containerKatilimci{
+    height: 570px;
+    width: 600px;
+    background-color: #e9ecf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+form h2 {
+    margin-top: 20px;
+}
+form input[type="text"]{
+    border: none;
+    outline: none;
+    height: 30px;
+}
+form input[type="button"]{
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    height: 30px;
+    background-color: #3cd458;
+    color: white;
+    cursor: pointer;
+}
+.listContainer{
+    margin-top: 20px;
+}
+.list{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    list-style: none;
+    padding: 0 5px 0 5px;
+}
+li {
+    width: 100%;
+}
+button{
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color: #3cd458;
+    color: white;
+    cursor: pointer;    
+}
+.result{
+    height: 30px;
+    width: 300px;
+}
+.alert{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30PX;
+    border-radius: 10px;
+    background-color: #E2DEA9;
+}
+.alertBtn{
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    position: relative;
+}
