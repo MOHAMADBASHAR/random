@@ -19,7 +19,7 @@ function AddToList(){
 }
 resultBtn.addEventListener("click", sonucuGoster)
 function sonucuGoster(){
-    if(list.length>0){
+    if(list.children.length>0){
         const kazananTxt= document.querySelector(".kazanan")
         let listArray=list.children;
         let rastgeleSayi = Math.floor(Math.random() * listArray.length);
@@ -31,6 +31,7 @@ function sonucuGoster(){
     }
     else{
         alert("lütfen kullanıcı ekleyiniz");
+        console.log(list.children.length)
     }
     
 }
