@@ -7,6 +7,7 @@ addToListBtn.addEventListener("click", AddToList)
 function AddToList(){
     const katilimciInput = document.querySelector(".katilimci");
     if(katilimciInput.value.length>0){
+        console.log(katilimciInput)
         const li = document.createElement("li");
         li.innerHTML= katilimciInput.value;
         list.appendChild(li);
